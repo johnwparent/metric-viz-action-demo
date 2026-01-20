@@ -26,7 +26,7 @@ jobs:
       - name: Build and upload
         run: |
           ctest -S upload_metrics.cmake -DCONFIG_FILE=clang_tidy_config.yaml
-      - uses: johnwparent/cdash-metrics-viz@8ef55ecf913796cd31f1201a9f67e1a53919d711
+      - uses: johnwparent/cdash-metrics-viz@6f162fdc569956eb11c5507a9e12efc829a74d7d
         with:
           build-directory: build-metrics
           cdash: my.cdash.org
